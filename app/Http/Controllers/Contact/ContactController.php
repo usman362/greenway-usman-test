@@ -43,7 +43,6 @@ class ContactController extends Controller
      */
     public function store(CreateContactRequest $request)
     {
-        dd($request->all());
         $contact = Contact::create([
             'name' => $request->name,
             'email' => $request->email,
